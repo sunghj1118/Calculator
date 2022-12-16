@@ -32,7 +32,7 @@ void result(int choice, int a, int b) {
         break;
     }
     case 4: {
-        cout << "Division is " << (a/b) << endl;
+        cout << "Division is " << ((double) a/b) << endl;
         break;
     }
     case 5: {
@@ -55,6 +55,6 @@ int main()
         cin >> a >> b;
         menu();
         cin >> choice;
+        result(choice, a, b);
     }
-    result(choice, a, b);
 }
